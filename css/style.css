@@ -1,0 +1,121 @@
+/*
+Colors used:
+Background Color (shade of white): #f2f2f2;
+Primary Color (black): #000000;
+Secondary Color (white): #ffffff;
+Highlight Color-1 (cool gray): #a1bbce;
+Highlight Color-2 (lighter shade of cool gray): #dbdfeb;
+*/
+
+ /* Sets font and sizing */
+body {
+    background-color: #ffffff;
+    font-family: 'dosis', sans-serif;
+    font-size: 16px; /* Sets the font size to 16px */
+    font-weight: 300; /* Sets the font weight to 300 */
+    line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+    color: #000000;
+  }
+  
+  h1, h2, h3, h4, h5 {
+    line-height: 1.4;
+  }
+  h1 {
+    font-size: 2.50em;
+    font-weight: 600;
+  }
+  
+  h2 {
+    font-size: 2.00em;
+    font-weight: 550;
+  }
+  
+  h3 {
+    font-size: 1.50em;
+    font-weight: 450;
+  }
+  h4 {
+    font-size: 1.25em;
+    font-weight: 450;
+  }
+
+  h5 {
+    font-size: 1.00em;
+    font-weight: 450;
+  }
+
+  /* Sets the scaling and dimensions */
+
+  img {
+    width: 100%;
+  }
+
+
+   /* Hyperlinks */
+
+  a {
+    color: #39a187;
+    text-decoration: none; /* No underlining */
+  }
+  a:hover,
+  a:focus {
+    color: #185f64;
+    text-decoration: underline; /* Underlining when hovering over a link */
+  }
+  Next to the hover state, you can also style the visited and active states of your links. These are what you see once you’ve already visited a link and when you actively click on a link, respectively:
+  
+  a:visited { /* visited link */
+    color: #4c39a1;
+  }
+  a:active { /* selected link */
+    color: #39a187;
+  }
+
+
+
+
+
+
+
+
+
+ /* Button, add to the botton of style sheet, otherwise it could overriden */
+
+  .button {
+    text-decoration: none;
+    display: inline-block; 
+    background-color: #a1bbce;
+    color: #000000; /* needed to override the default link color */
+    font-weight: 400;
+    padding: 10px;
+    border-radius: 45px;
+    border-bottom: 2px solid #dbdfeb; /* width of the border, type, color */
+    transition: 0.2s opacity;
+  }
+
+  .button:hover {
+    opacity: 0.8; /* Reduces the opacity of the button to 80% */
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+  a:active { /* selected link */
+    color: #dbdfeb;
+    }
+
+    .button.contact {
+        background-color: transparent;
+        color: #a1bbce;
+        text-transform: uppercase;
+        border: 2px solid #a1bbce;
+      }
+
+      .button.contact:hover {
+        opacity: 0.8; /* Reduces the opacity of the button to 80% */
+        color: #000000;
+        text-decoration: none;
+      }
+    
+      a:active { /* selected link */
+        color: #dbdfeb;
+        }
