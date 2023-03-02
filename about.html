@@ -12,40 +12,50 @@
   </head>
   <body><!-- Body Tag Begin -->
     <header><!-- Header Begin -->
-        <div id="navigation">
+      <div class="container" >
+        <div class="logo">
             <img src="img/logo/img_logo_1x.png" alt="Logo">
-            <nav>
+          </div>
+            <nav id="nav">
               <ul>
-                <li><a href="index.html">Work</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="index.html" >Work</a></li>
+                <li><a href="about.html" >About</a></li>
+                <li><a href="#contact" >Contact</a></li>
               </ul>
             </nav>
-        </div>
-        <div id="hero"><!-- Hero Section Begin -->
-          <h1>Phuong Pe&ntilde;a | UX/UI designer | United States.</h1>
-        </div><!-- Hero Section End -->
+          </div>
     </header><!-- Header End -->
     <main><!-- Work Preview Begin -->
-        <div id="aboutme">
+      <div id="hero"><!-- Hero Section Begin -->
+        <div class="container" >
+        <h1>Phuong Pe&ntilde;a | UX/UI designer | United States.</h1>
+      </div>
+      </div><!-- Hero Section End -->
+      <div id="work">
+      <div class="container" >
             <h2>About</h2>
+            <div class="row">
             <picture>
                 <source srcset="img/profile/img_profile_1x.jpg" media="(max-width:767px)">
                 <img src="img/profile/img_profile_1x.jpg" alt="Profile">
             </picture>
             <p>Phuong is enthusiastic and passionate about User Experience and User Interface Design. She enjoys fostering creativity from early concept to implementation and strives to deliver empowering and innovated experiences that help bridge the gap between people and products. She thrives in working with cross-functional teams to turn challenges into user-centric solutions that elevate brand experiences.
             </p>
+          </div>
         </div>
-        <div><!-- Details -->
             <div><!-- About Begin -->
-              <h1>Who am I?</h1>
+              <div class="container" >
+              <h2>Who am I?</h2>
+              <div class="row">
               <p>I am a UX/UI designer with a background in advertising, information technology and project management. I have experience working in the healthcare and government industries, where I specialized in collecting requirements and defining user stories, understanding users’ pain points, training, project management, and optimizing work processes. In my role, I analyzed the customer journey whether it be from initial service work to work order/service request closeout, how a customer experienced running reports for operations to how they experience a team’s website, which helped to identify touch points to increase efficiency and customer experience. After some time in these fields, I wanted to focus more on the customer, and felt inspired to move into user experience and interface design. Incorporating my expertise in technology and creativity, I want to build satisfying product experiences and solutions.
               </p>
+              </div>
+            </div>
             </div><!-- About End -->
             <div><!-- Skill and Tools Column -->
+              <div class="container" >
               <h2>Skills &amp; Tools</h2>
-              <div><!-- Skills -->
-              <div id="skills">
+              <div id="skills"><!-- Skills -->
                 <h3>Skills</h3>
                 <ul>
                   <li>UI/UX Design</li>
@@ -100,22 +110,25 @@
                         <li>Snagit</li>
                         <li>WordPress</li>
                     </ul> 
-            </div>
+            </div><!-- Tools End -->           
             <div id="resume">
                 <h3>Take a peek at my resume</h3>
-                <a href="files/phuong_pena_resume.pdf"class="button">Resume</a>
-              </div><!-- Tools End -->
+                <div class="row">
+                <a href="files/phuong_pena_resume.pdf" class="button">Resume</a>
             </div><!-- Skills & Tools End -->
-          </div><!-- Details End -->
         </div><!-- Resume End -->
+      </div><!-- Work End -->
+    </div>
+  </div> 
     </main><!-- Work Preview End -->
   <footer id="contact"><!-- Footer Begin -->
+    <div class="container" >
     <h2>Get in Touch</h2>
 <p>
   Interested? Please get in touch. Call: <a href="tel:+15125601432">+1 5125601432</a>. Prefer sending an email?
 </p>
 <div>
-  <a href="mailto:phuong.pena@gmail.com"class="button contact">Email me</a>
+  <a href="mailto:phuong.pena@gmail.com" class="button contact">Email me</a>
 </div>
 <br>
 <div><!-- Socials Begin -->
@@ -165,6 +178,7 @@
     </a>
 </div><!-- Socials End -->
 <p>Copyright Phuong Pe&ntilde;a 2023</p>
+</div>
   </footer><!-- Footer End -->
   </body><!-- Body Tag End -->
 </html>

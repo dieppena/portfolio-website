@@ -7,6 +7,116 @@ Highlight Color-1 (cool gray): #a1bbce;
 Highlight Color-2 (lighter shade of cool gray): #dbdfeb;
 */
 
+
+ /* Layout styling */
+* {
+    box-sizing: border-box;
+  }
+
+*.container {
+  padding: 0 15px;
+}
+
+#work .row {
+    margin: 25px 0; /* 25px top and bottom, 0 left and right */
+    padding-bottom: 25px; 
+    border-bottom: 1px solid #4a4a4a;
+  }
+
+#resume .row {
+    margin: 25px 0; /* 25px top and bottom, 0 left and right */
+    padding-bottom: 25px; 
+    border-bottom: 1px solid #4a4a4a;
+  }
+
+#hero .row {
+    margin: 25px 0; /* 25px top and bottom, 0 left and right */
+    padding-bottom: 25px; 
+    border-bottom: 1px solid #4a4a4a;
+  }
+    
+/* Header, Hero and Main */
+header {  
+    background-color: #000000;
+    text-align: center;
+    padding-top: 10px;
+    padding-right: 5px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    margin: 0 auto; /* No spacing to top and bottom and auto spacing to left and right */
+    position: relative;
+    border-bottom: 2px solid #4a4a4a;
+    box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.27);
+  }
+  
+  .logo {
+    max-width: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #hero {
+    background-color: #f2f2f2;
+    padding: 5px 5;
+    display: inline-block;
+    width: 100%;;
+  }
+
+ #hero h1 {
+    text-align: center; /* Centers text */
+  }
+
+  h2 {
+    text-align: center; /* Centers text */
+  }
+
+  main {
+    padding-top: 10px;
+  }
+
+
+  /* Navigation */
+
+
+  nav > ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  nav > ul > li {
+    display: inline-block;
+  }
+
+  nav > ul > li > a {
+    padding: 0 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #a1bbce;
+  }
+ 
+  nav > ul > li > a:visited {/* visited link */
+    padding: 0 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #4c39a1;
+}
+
+nav > ul > li > a:hover {
+    padding: 0 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #185f64;
+}
+
+nav > ul > li > a:active { /* selected link */
+    padding: 0 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #a1bbce;
+}
+
+
  /* Sets font and sizing */
 body {
     background-color: #ffffff;
@@ -46,10 +156,9 @@ body {
 
   /* Sets the scaling and dimensions */
 
-  img {
+img {
     width: 100%;
-  }
-
+ }
 
    /* Hyperlinks */
 
@@ -62,7 +171,6 @@ body {
     color: #185f64;
     text-decoration: underline; /* Underlining when hovering over a link */
   }
-  Next to the hover state, you can also style the visited and active states of your links. These are what you see once you’ve already visited a link and when you actively click on a link, respectively:
   
   a:visited { /* visited link */
     color: #4c39a1;
@@ -71,13 +179,10 @@ body {
     color: #39a187;
   }
 
-
-
-
-
-
-
-
+  /* Footer */
+  #contact {
+    text-align: center; /* Centers text */
+  }
 
  /* Button, add to the botton of style sheet, otherwise it could overriden */
 
@@ -91,6 +196,11 @@ body {
     border-radius: 45px;
     border-bottom: 2px solid #dbdfeb; /* width of the border, type, color */
     transition: 0.2s opacity;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #a1bbce;
+    text-transform: uppercase;
   }
 
   .button:hover {
@@ -103,19 +213,19 @@ body {
     color: #dbdfeb;
     }
 
-    .button.contact {
+  .button.contact {
         background-color: transparent;
         color: #a1bbce;
         text-transform: uppercase;
         border: 2px solid #a1bbce;
       }
 
-      .button.contact:hover {
+  .button.contact:hover {
         opacity: 0.8; /* Reduces the opacity of the button to 80% */
         color: #000000;
         text-decoration: none;
       }
     
-      a:active { /* selected link */
+  a:active { /* selected link */
         color: #dbdfeb;
         }
