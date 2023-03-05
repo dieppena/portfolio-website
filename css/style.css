@@ -166,9 +166,7 @@ height: auto;
     padding-bottom: 40px; 
  }
 
- .designprocess1 {
-    padding-top: 100px;
-}
+
 
 .project {
     color: white;
@@ -304,8 +302,8 @@ Medium devices (640px and larger)
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
-
 }
+
 #about h2 {
     text-align: left;
     padding-top: 16px;
@@ -318,12 +316,25 @@ Medium devices (640px and larger)
     margin-left: auto;
     margin-right: auto;
 }  
-    #presents img {
-        max-width: 200px;
-        position: relative;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
+
+#presents img {
+    max-width: 200px;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#hi img {
+    max-width: 350px;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#pluto h2 {
+    text-align: left; 
 }
 
 .button {
@@ -379,17 +390,33 @@ Large devices (1024px or larger)
     margin-left: auto;
     margin-right: auto;
 }  
-    #presents img {
-        max-width: 250px;
-        position: relative;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
+
+#presents img {
+     max-width: 250px;
+     position: relative;
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
 }
 
+#hi img {
+    max-width: 450px;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#pluto h2 {
+    text-align: left; 
+}
+
+.project {
+    padding-bottom: 100px;
+}
 .designprocess1 {
     padding-top: 100px;
 }
+
 }
 
 section {
