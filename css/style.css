@@ -23,6 +23,13 @@ Highlight Color-2 (lighter shade of cool gray): #dbdfeb;
     border-bottom: 1px solid #4a4a4a;
   }
 
+  #project .row {
+    margin: 25px 0; /* 25px top and bottom, 0 left and right */
+    height: 900px;
+    padding-bottom: 25px; 
+    border-bottom: 1px solid #4a4a4a;
+  }
+
 #resume .row {
     margin: 25px 0; /* 25px top and bottom, 0 left and right */
     padding-bottom: 25px; 
@@ -161,17 +168,14 @@ max-width: 100%;
 height: auto;
  }
 
- .splash{
-    max-width: 30%;
-    padding-bottom: 40px; 
+ #splash {
+    max-width: 80%;
  }
 
-
-
-.project {
-    color: white;
-    padding: 20em;
+ #plutopay {
+  margin-top: -20px;
 }
+
    /* Hyperlinks */
 
   a {
@@ -265,7 +269,10 @@ height: auto;
  .center {
             text-align: center;
           }   
-        
+  
+  .resume {
+            text-align: center;
+          }  
         
 /* ==============================
 Medium devices (640px and larger)
@@ -344,7 +351,13 @@ Medium devices (640px and larger)
 .button.contact {
     max-width: 200px;
     position: center;
+  }
 
+  #work .row {
+    margin: 25px 0; /* 25px top and bottom, 0 left and right */
+    height: 500px;
+    padding-bottom: 25px; 
+    border-bottom: 1px solid #4a4a4a;
   }
 
 }
@@ -452,16 +465,15 @@ section {
 
   #splash {
     position:relative;
-    height:75px;
+    height:500px;
     width:250px;
     margin:0 auto;
-    overflow: hidden;
+
   }
   
   #splash img {
     position:absolute;
     left:0;
-    overflow: hidden;
     -webkit-transition: opacity 1s ease-in-out;
     -moz-transition: opacity 1s ease-in-out;
     -o-transition: opacity 1s ease-in-out;
