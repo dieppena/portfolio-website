@@ -23,9 +23,8 @@ Highlight Color-2 (lighter shade of cool gray): #dbdfeb;
     border-bottom: 1px solid #4a4a4a;
   }
 
-  #project .row {
+#project .row {
     margin: 25px 0; /* 25px top and bottom, 0 left and right */
-    height: 900px;
     padding-bottom: 25px; 
     border-bottom: 1px solid #4a4a4a;
   }
@@ -164,8 +163,12 @@ body {
 
 img {
     width: 100%;
-max-width: 100%;
-height: auto;
+    max-width: 100%;
+    height: auto;
+ }
+
+ #hi img{
+  float: left;
  }
 
  #splash {
@@ -305,6 +308,7 @@ Medium devices (640px and larger)
     display: table;
   }
 
+  
   .container {
     max-width: 1200px;
     margin-left: auto;
@@ -353,12 +357,6 @@ Medium devices (640px and larger)
     position: center;
   }
 
-  #work .row {
-    margin: 25px 0; /* 25px top and bottom, 0 left and right */
-    height: 500px;
-    padding-bottom: 25px; 
-    border-bottom: 1px solid #4a4a4a;
-  }
 
 }
 
