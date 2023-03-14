@@ -17,11 +17,23 @@ Highlight Color-2 (lighter shade of cool gray): #dbdfeb;
   padding: 0 15px;
 }
 
-#work .row {
+#workindex .row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+  padding-bottom: 25px; 
+  border-bottom: 1px solid #4a4a4a;
+}
+
+#workabout .row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+  padding-bottom: 25px; 
+  border-bottom: 1px solid #4a4a4a;
+}
+#workplutpay .row {
     margin: 25px 0; /* 25px top and bottom, 0 left and right */
     padding-bottom: 25px; 
     border-bottom: 1px solid #4a4a4a;
   }
+
 
 #project .row {
     margin: 25px 0; /* 25px top and bottom, 0 left and right */
@@ -62,7 +74,7 @@ header {
 
   #hero {
     background-color: #f2f2f2;
-    padding: 5px 5;
+    padding: 10px 10;
     display: inline-block;
     width: 100%;;
   }
@@ -136,27 +148,27 @@ body {
     line-height: 1.2;
   }
   h1 {
-    font-size: 2.25em;
+    font-size: 1.80em;
     font-weight: 600;
   }
   
   h2 {
-    font-size: 1.75em;
+    font-size: 1.55em;
     font-weight: 550;
   }
   
   h3 {
-    font-size: 1.55em;
-    font-weight: 450;
+    font-size: 1.40em;
+    font-weight: 470;
   }
   h4 {
     font-size: 1.25em;
-    font-weight: 450;
+    font-weight: 460;
   }
 
   h5 {
     font-size: 1.10em;
-    font-weight: 450;
+    font-weight: 460;
   }
 
   /* Sets the scaling and dimensions */
@@ -273,8 +285,8 @@ img {
             text-align: center;
           }   
   
-  .resume {
-            text-align: center;
+  .resumebutton {
+            text-align: left;
           }  
         
 /* ==============================
@@ -293,14 +305,37 @@ Medium devices (640px and larger)
     }
     #hero span {
         display: block;
+    }
+
+    .col-md-2 {
+      width: 25%;
+    }
+
+    .col-md-3 {
+      width: 30%;
+    }
+    .col-md-4 {
+      width: 35%;
+    }
+    .col-md-5 {
+        width: 40%;
       }
+
     .col-md-6 {
         width: 50%;
       }
 
+    .col-md-7 {
+        width: 60%;
+      }
+
+      .col-md-7 {
+        width: 70%;
+      }
+
       [class*="col-"] {
       float: left;
-      padding: 10px;
+      padding: 5px;
 }
    .row::after {
     content: "";
@@ -308,33 +343,63 @@ Medium devices (640px and larger)
     display: table;
   }
 
-  
   .container {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
 }
 
+#about {
+  text-align: center;
+}
+
 #about h2 {
-    text-align: left;
-    padding-top: 16px;
+    text-align: center;
 
 }
+
 #splash img {
-    max-width: 150px;
+    max-width: 175px;
     position: relative;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }  
 
+#splashindex img {
+  max-width: 175px;
+  padding-top: 60px;
+  position: relative;
+  display: block;
+  margin-left: 35px;
+  margin-right: auto;
+  text-align: right; 
+
+}  
+
 #presents img {
     max-width: 200px;
+    margin-top: -20px;
+    position: relative;
     position: relative;
     display: block;
     margin-left: auto;
     margin-right: auto;
+
 }
+
+.pp {
+  text-align: center; 
+}
+
+.center {
+  text-align: left; 
+}
+
+.center.button {
+  max-width: 100px;
+}
+
 
 #hi img {
     max-width: 350px;
@@ -348,15 +413,49 @@ Medium devices (640px and larger)
     text-align: left; 
 }
 
+#who h2 {
+  text-align: left; 
+}
+
+#plutopay h2 {
+  text-align: left; 
+}
+
+
+#workindex .row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+  padding-bottom: 25px; 
+  border-bottom: 1px solid #4a4a4a;
+}
+
+#workabout .row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+  padding-bottom: 25px; 
+  border-bottom: 1px solid #4a4a4a;
+}
+#workplutpay .row {
+    margin: 40px 0px; /* 25px top and bottom, 0 left and right */
+    margin-bottom: -10px;
+    padding-bottom: 25px; 
+    border-bottom: 1px solid #4a4a4a;
+  }
+
+
 .button {
-    max-width: 200px;
+    max-width: 140px;
 }
 
 .button.contact {
-    max-width: 200px;
+    max-width: 140px;
     position: center;
   }
 
+.prototype {
+  padding-top: 35px;
+  text-align: right; 
+
+
+}
 
 }
 
@@ -365,14 +464,19 @@ Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px)  {
     .col-lg-3 {
-        width: 25%;
+        width: 24%;
     }
     .col-lg-4 {
-        width: 33.33%;
+        width: 30.33%;
     }
     .col-lg-5 {
-        width: 41.66%;
+        width: 45.66%;
     }
+
+    .col-lg-6 {
+      width: 50%;
+      padding-bottom: 32px;
+  }
     .col-lg-7 {
         width: 58.33%;
         padding-bottom: 32px;
@@ -406,8 +510,10 @@ Large devices (1024px or larger)
      max-width: 250px;
      position: relative;
      display: block;
+     margin-top: -50px;
      margin-left: auto;
      margin-right: auto;
+
 }
 
 #hi img {
@@ -417,8 +523,17 @@ Large devices (1024px or larger)
     margin-left: auto;
     margin-right: auto;
 }
+
 #pluto h2 {
     text-align: left; 
+}
+
+#profile img {
+  max-width: 500px;
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .project {
@@ -428,9 +543,80 @@ Large devices (1024px or larger)
     padding-top: 100px;
 }
 
+.button {
+  max-width: 175px;
+}
+
+.button.contact {
+  max-width: 175px;
+  position: center;
+}
+.prototype {
+  padding-top: 35px;
+  text-align: right; 
+}
+
 }
 
 section {
+  position: relative;
+}
+
+section img {
+  position: absolute;
+}
+
+.top {
+  animation-name: fade;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 6s;
+  animation-direction: alternate;
+}
+
+
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
+
+  #splashindex {
+    position:relative;
+    height:500px;
+    width:250px;
+    margin:0 auto;
+
+  }
+  
+  #splashindex img {
+    position:absolute;
+    left:0;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  #splashinex img.top:hover {
+    opacity:0;
+  }
+
+
+
+  
+  section {
     position: relative;
   }
   
@@ -438,15 +624,57 @@ section {
     position: absolute;
   }
 
-  .top {
+
+  .sp1 {
     animation-name: fade;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
     animation-duration: 5s;
-    animation-direction: alternate;
+    animation-direction: normal;
+
   }
-  
-  @keyframes fade {
+  .sp2 {
+    animation-name: fade;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+    animation-direction: normal;
+  }
+
+  .ob1 {
+    animation-name: fade;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 15s;
+    animation-direction: normal;
+  }
+
+  .ob2 {
+    animation-name: fade;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 20s;
+    animation-direction: normal;
+  }
+
+  .ob3 {
+    animation-name: fade;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 25s;
+    animation-direction: normal;
+  }
+
+  .ob4 {
+    animation-name: fade;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 160s;
+    animation-direction: normal;
+  }
+
+
+    @keyframes fade {
     0% {
       opacity: 1;
     }
@@ -480,4 +708,7 @@ section {
   
   #splash img.top:hover {
     opacity:0;
+
   }
+
+  
