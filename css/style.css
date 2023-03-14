@@ -17,6 +17,12 @@ Highlight Color-2 (lighter shade of cool gray): #dbdfeb;
   padding: 0 15px;
 }
 
+hr {
+  width: 66.7%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 #workindex .row {
   margin: 25px 0; /* 25px top and bottom, 0 left and right */
   padding-bottom: 25px; 
@@ -491,6 +497,17 @@ Large devices (1024px or larger)
         float: left;
         padding: 0 20px 40px;
     }
+
+    [class*="col-"] {
+      float: left;
+      padding: 5px;
+}
+   .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
     .container {
         max-width: 1200px;
         margin-left: auto;
