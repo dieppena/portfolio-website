@@ -18,7 +18,7 @@ Highlight Color-2 (lighter shade of cool gray): #dbdfeb;
 }
 
 hr {
-  width: 66.7%;
+  width: 95%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -393,7 +393,7 @@ Medium devices (640px and larger)
 }  
 
 #presents img {
-    max-width: 200px;
+    max-width: 125px;
     margin-top: -20px;
     position: relative;
     position: relative;
@@ -531,7 +531,7 @@ Large devices (1024px or larger)
 }  
 
 #presents img {
-     max-width: 250px;
+     max-width: 175px;
      position: relative;
      display: block;
      margin-top: -50px;
