@@ -355,14 +355,23 @@ Medium devices (640px and larger)
     margin-right: auto;
 }
 
+
 #about {
   text-align: center;
 }
 
 #about h2 {
     text-align: center;
-
 }
+
+
+#profile img {
+  max-width: 200px;
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}  
 
 #splash img {
     max-width: 175px;
@@ -459,8 +468,6 @@ Medium devices (640px and larger)
 .prototype {
   padding-top: 35px;
   text-align: right; 
-
-
 }
 
 }
@@ -513,7 +520,7 @@ Large devices (1024px or larger)
         margin-left: auto;
         margin-right: auto;
         padding: 0 16px;
-    }
+    } 
 
 #splash img {
     max-width: 200px;
@@ -546,7 +553,7 @@ Large devices (1024px or larger)
 }
 
 #profile img {
-  max-width: 500px;
+  max-width: 225px;
   position: relative;
   display: block;
   margin-left: auto;
