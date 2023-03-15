@@ -650,7 +650,7 @@ section img {
 
 
   .sp1 {
-    animation-name: fade;
+    animation-name: fade1;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
     animation-duration: 5s;
@@ -658,7 +658,7 @@ section img {
 
   }
   .sp2 {
-    animation-name: fade;
+    animation-name: fade1;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
     animation-duration: 10s;
@@ -666,44 +666,44 @@ section img {
   }
 
   .ob1 {
-    animation-name: fade;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-    animation-duration: 15s;
-    animation-direction: normal;
-  }
-
-  .ob2 {
-    animation-name: fade;
+    animation-name: fade1;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
     animation-duration: 20s;
     animation-direction: normal;
   }
 
-  .ob3 {
-    animation-name: fade;
+  .ob2 {
+    animation-name: fade1;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
-    animation-duration: 25s;
+    animation-duration: 30s;
+    animation-direction: normal;
+  }
+
+  .ob3 {
+    animation-name: fade1;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 40s;
     animation-direction: normal;
   }
 
   .ob4 {
-    animation-name: fade;
+    animation-name: fade1;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
-    animation-duration: 160s;
+    animation-duration: 60s;
     animation-direction: normal;
   }
 
 
-    @keyframes fade {
+    @keyframes fade1 {
     0% {
-      opacity: 1;
+      opacity: 3;
     }
     25% {
-      opacity: 1;
+      opacity: 2;
     }
     75% {
       opacity: 0;
@@ -724,10 +724,10 @@ section img {
   #splash img {
     position:absolute;
     left:0;
-    -webkit-transition: opacity 1s ease-in-out;
-    -moz-transition: opacity 1s ease-in-out;
-    -o-transition: opacity 1s ease-in-out;
-    transition: opacity 1s ease-in-out;
+    -webkit-transition: opacity 2s ease-in-out;
+    -moz-transition: opacity 2s ease-in-out;
+    -o-transition: opacity 2s ease-in-out;
+    transition: opacity 2s ease-in-out;
   }
   
   #splash img.top:hover {
