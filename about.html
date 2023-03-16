@@ -12,6 +12,8 @@
   </head>
   <body><!-- Body Tag Begin -->
     <header><!-- Header Begin -->
+      <div class="navtoggle" id="myNavtoggle">
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
       <div class="container" >
         <div class="logo">
             <img src="img/logo/img_logo_1x.png" alt="Logo">
@@ -21,9 +23,14 @@
                 <li><a href="index.html" >Work</a></li>
                 <li><a href="about.html" >About</a></li>
                 <li><a href="#contact" >Contact</a></li>
+                <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
               </ul>
             </nav>
           </div>
+          <script
+          src="https://kit.fontawesome.com/a3921eb820.js"
+          crossorigin="anonymous"
+        ></script>
     </header><!-- Header End -->
     <main><!-- Work Preview Begin -->
       <div id="hero"><!-- Hero Section Begin -->
@@ -191,6 +198,10 @@
   <p>Copyright Phuong Pe&ntilde;a 2023</p>
   </div>
     </footer><!-- Footer End -->
+    <script
+    src="https://code.jquery.com/jquery-3.6.4.min.js"
+    integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+    crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
     </body><!-- Body Tag End -->
   </html>

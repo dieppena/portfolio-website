@@ -12,6 +12,8 @@
   </head>
   <body><!-- Body Tag Begin -->
     <header><!-- Header Begin -->
+      <div class="navtoggle" id="myNavtoggle">
+      <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
       <div class="container" >
         <div class="logo">
           <img src="img/logo/img_logo_1x.png" alt="Logo">
@@ -21,9 +23,14 @@
                 <li><a href="index.html">Work</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
               </ul>
             </nav>
           </div>
+          <script
+          src="https://kit.fontawesome.com/a3921eb820.js"
+          crossorigin="anonymous"
+        ></script>
     </header><!-- Header End -->
     <main><!-- Work Preview Begin -->
       <div id="hero"><!-- Hero Section Begin -->
@@ -51,6 +58,11 @@
       </div> <!-- plutopay end -->
         <p>Welcome to PlutoPay, a digital wallet app that allows users to accomplish financial transactions such as paying, requesting, transferring and sending money, depositing checks, shop and even splitting and paying bills.  All transactions can be done remotely without ever having to physically visit a bank or store. All activities are just a tap away.
         </p>
+        <a href="#section-1">Jump to section 01 - Discover</a><br />
+        <a href="#section-2">Jump to section 02 - Define</a><br />
+        <a href="#section-3">Jump to section 03 - Ideate</a><br />
+        <a href="#section-4">Jump to section 04 - Prototype</a><br />
+        <a href="#section-5">Jump to section 05 - Test</a><br />
       </div> <!-- project end -->
     </div> <!-- column end -->
       </div> <!-- row end -->
@@ -62,7 +74,7 @@
             <img src="img/plutopay/img_plutopay_process1_1x.jpg" alt="Process 1">
           </picture>
           </div>
-          <h3>01 - Discover</h3>
+          <h3 id="section-1">01 - Discover</h3>
           <h4>1.1 The Problem Statement</h4>
           <h5>What problem(s) do users encounter?</h5>
           <p>There are many digital wallet solutions in the market today. Users need a way to
@@ -90,7 +102,7 @@
           <p>To get a better understanding competitors in the market, I analyzed PayPal and Venmo for the competitive analysis to give me an idea of what my users are in need of and to learn about their strengths, weaknesses, opportunities, and threats to better understand what gaps are in the market.</p>
           <h4>1.4 User Research</h4>
           <p>With the same individuals, I was able to analyze behaviors, attitudes, needs, goals, and frustrations. Here are a few quotes gathered:</p>
-          <h3>02 - Define</h3>
+          <h3 id="section-2">02 - Define</h3>
           <picture>
             <source srcset="img/plutopay/img_plutopay_quotes_1x.jpg" media="(max-width:767px)">
             <img src="img/plutopay/img_plutopay_quotes_1x.jpg" alt="User Quotes">
@@ -100,7 +112,7 @@
             <source srcset="img/plutopay/img_plutopay_process2_1x.jpg" media="(max-width:767px)">
             <img src="img/plutopay/img_plutopay_process2_1x.jpg" alt="Process 2">
           </picture>
-          <h3>02 - Define</h3>
+          <h3 id="section-2">02 - Define</h3>
           <h4>2.1 User Personas</h4>
           <p>After my research, I reviewed the sessions, organized the data for each participant and used my research findings in the discovery phase to create two personas to help me further understand the users.  They are representations of my target audience. Their behaviors, goals, needs, motivations, and frustrations are derived from my research participants, also aligning with the product requirements.</p>
           <h5>Who are they?</h5>
@@ -123,7 +135,7 @@
             <source srcset="img/plutopay/img_plutopay_process3_1x.jpg" media="(max-width:767px)">
             <img src="img/plutopay/img_plutopay_process3_1x.jpg" alt="Splash">
           </picture>
-          <h3>03 - Ideate</h3>
+          <h3 id="section-3">03 - Ideate</h3>
           <h4>3.1 User Flows</h4>
           <p>I created user 3 user flows to follow the personas’ journey.  These diagrams really helped me map out the pages/screens a user must interact with to complete a task in the app.  The key to the flow being that there is always a beginning and and end that follows a users progression through any given path.</p>
           <picture>
@@ -147,7 +159,7 @@
             <source srcset="img/plutopay/img_plutopay_process4_1x.jpg" media="(max-width:767px)">
             <img src="img/plutopay/img_plutopay_process4_1x.jpg" alt="Splash">
           </picture>
-          <h3>04 - Prototype</h3>
+          <h3 id="section-4">04 - Prototype</h3>
           <h4>4.1 Mockups</h4>
           <p>I redesigned my wireframes from Adobe XD to Figma for the remainder of my project.  Below you will find the ‘Pay a bill’ mockups.</p>
             <h5>High-Fidelity Mockups</h5>
@@ -160,7 +172,7 @@
             <source srcset="img/plutopay/img_plutopay_process5_1x.jpg" media="(max-width:767px)">
             <img src="img/plutopay/img_plutopay_process5_1x.jpg" alt="Process 5">
           </picture>
-          <h3>05 - Test</h3>
+          <h3 id="section-5">05 - Test</h3>
           <h4>5.1 Usability Testing</h4>
           <p>The mid fidelity wireframes were turned into a clickable prototype in Figma. I conducted a usability test to test the features and functionality needed to complete 3 tasks on my app. The goal of this phase was to understand if the features and overall purpose of PlutoPay were intuitive by collecting valuable feedback from testers in my target audience and to identify if there were errors and room for improvement.</p>
           <h5>Affinity Map & Rainbow Spreadsheet</h5>
@@ -266,6 +278,10 @@
 </div><!-- Socials End -->
 <p>Copyright Phuong Pe&ntilde;a 2023</p>
   </footer><!-- Footer End -->
+  <script
+  src="https://code.jquery.com/jquery-3.6.4.min.js"
+  integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+  crossorigin="anonymous"></script>
   <script src="js/scripts.js"></script>
   </body><!-- Body Tag End -->
 </html>
