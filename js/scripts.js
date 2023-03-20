@@ -9,7 +9,7 @@ function menuToggle() {
     }
   }
 
-  function menuToggle() {
+  function projectToggle() {
     var x = document.getElementById('myPPMenu');
     if (x.className === 'PPMenu') {
       x.className += ' responsive';
