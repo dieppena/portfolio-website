@@ -142,21 +142,21 @@ header {
     padding: 0 15px;
     text-transform: uppercase;
     font-weight: 700;
-    color: #a1bbce;
+    color: #57b0f8;
   }
  
   nav > ul > li > a:visited {/* visited link */
     padding: 0 15px;
     text-transform: uppercase;
     font-weight: 700;
-    color: #4c39a1;
+    color: #a1bbce;
 }
 
 nav > ul > li > a:hover {
     padding: 0 15px;
     text-transform: uppercase;
     font-weight: 700;
-    color: #185f64;
+    color: #dbdfeb;
 }
 
 nav > ul > li > a:active { /* selected link */
@@ -224,7 +224,7 @@ menu > ul > li > a:hover {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
-  color: #185f64;
+  color: #dbdfeb;
 }
 
 menu > ul > li > a:active { /* selected link */
@@ -243,10 +243,10 @@ menu > ul > li > a:active { /* selected link */
  /* Sets font and sizing */
 body {
     background-color: #ffffff;
-    font-family: 'dosis', sans-serif;
-    font-size: 19px; /* Sets the font size to 16px */
-    font-weight: 300; /* Sets the font weight to 300 */
-    line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+    font-family: 'georgia', sans-serif;
+    font-size: 18px; /* Sets the font size to 18px */
+    font-weight: 200; /* Sets the font weight to 200 */
+    line-height: 1.5; /* Sets the line-height to 1.6 * the font-size */
     color: #000000;
   }
   
@@ -255,26 +255,26 @@ body {
   }
   h1 {
     font-size: 1.80em;
-    font-weight: 600;
+    font-weight: 700;
   }
   
   h2 {
     font-size: 1.55em;
-    font-weight: 550;
+    font-weight: 650;
   }
   
   h3 {
     font-size: 1.40em;
-    font-weight: 470;
+    font-weight: 600;
   }
   h4 {
     font-size: 1.25em;
-    font-weight: 460;
+    font-weight: 600;
   }
 
   h5 {
     font-size: 1.10em;
-    font-weight: 460;
+    font-weight: 600;
   }
 
   /* Sets the scaling and dimensions */
@@ -310,7 +310,7 @@ img {
   }
   
   a:visited { /* visited link */
-    color: #4c39a1;
+    color: #dadada;
   }
   a:active { /* selected link */
     color: #39a187;
@@ -330,7 +330,7 @@ img {
   z-index: 99; /* Make sure it does not overlap */
   border: none; /* Remove borders */
   outline: none; /* Remove outline */
-  background-color: #000000; /* Set a background color */
+  background-color: #57b0f8; /* Set a background color */
   color: white; /* Text color */
   cursor: pointer; /* Add a mouse pointer on hover */
   padding: 15px; /* Some padding */
@@ -339,21 +339,21 @@ img {
 }
 
 #myBtn:hover {
-  background-color: #555; /* Add a dark-grey background on hover */
+  background-color: #555555; /* Add a dark-grey background on hover */
 }
 
   .button {
     text-decoration: none;
     display: inline-block; 
-    background-color: #a1bbce;
+    background-color: #57b0f8;
     color: #000000; /* needed to override the default link color */
     font-weight: 400;
     padding: 10px;
     border-radius: 45px;
     border-bottom: 2px solid #dbdfeb; /* width of the border, type, color */
     transition: 0.2s opacity;
-    border: 2px solid #a1bbce;
-    text-transform: uppercase;
+    border: 2px solid #57b0f8;
+    text-transform: capitalize;
     transition-duration: 0.2s;
     transition-property: opacity;
     text-align: center;
@@ -378,14 +378,14 @@ img {
         text-decoration: none;
         display: inline-block; 
         background-color: transparent;
-        color: #a1bbce;
+        color: #57b0f8;
         font-weight: 400;
         padding: 10px;
         border-radius: 45px;
         border-bottom: 2px solid #dbdfeb; /* width of the border, type, color */
         transition: 0.2s opacity;
-        border: 2px solid #a1bbce;
-        text-transform: uppercase;
+        border: 2px solid #57b0f8;
+        text-transform: capitalize;
         transition-duration: 0.2s;
         transition-property: opacity;
         text-align: center;
