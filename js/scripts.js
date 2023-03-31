@@ -9,15 +9,6 @@ function menuToggle() {
     }
   }
 
-  function projectToggle() {
-    var x = document.getElementById('myPPMenu');
-    if (x.className === 'PPMenu') {
-      x.className += ' responsive';
-    } else {
-      x.className = 'PPMenu';
-    }
-  }
-
 
     // Get the button:
 let mybutton = document.getElementById("myBtn");
@@ -60,4 +51,19 @@ function showSlides() {
   setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
 
+// Collapsible menu
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active1");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
 
