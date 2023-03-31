@@ -5,6 +5,10 @@ Primary Color (black): #000000;
 Secondary Color (white): #ffffff;
 Highlight Color-1 (cool gray): #a1bbce;
 Highlight Color-2 (lighter shade of cool gray): #dbdfeb;
+Box colors: #4a4a4a and #444
+Hyperlinks: #185f64, #39a187
+Button colors: #57b0f8
+
 */
 
 
@@ -142,7 +146,7 @@ header {
     padding: 0 15px;
     text-transform: uppercase;
     font-weight: 700;
-    color: #57b0f8;
+    color: #66B7F9;
   }
  
   nav > ul > li > a:visited {/* visited link */
@@ -228,7 +232,7 @@ img {
    /* Hyperlinks */
 
   a {
-    color: #39a187;
+    color: #3951a1;
     text-decoration: none; /* No underlining */
   }
   a:hover,
@@ -238,10 +242,10 @@ img {
   }
   
   a:visited { /* visited link */
-    color: #a1bbce;
+    color: #444;
   }
   a:active { /* selected link */
-    color: #39a187;
+    color: #3951a1;
   }
 
   /* Footer */
@@ -258,7 +262,7 @@ img {
   z-index: 99; /* Make sure it does not overlap */
   border: none; /* Remove borders */
   outline: none; /* Remove outline */
-  background-color: #57b0f8; /* Set a background color */
+  background-color: #66B7F9; /* Set a background color */
   outline-color: #444;
   outline-style: solid ;
   color: black; /* Text color */
@@ -275,7 +279,7 @@ img {
   .button {
     text-decoration: none;
     display: inline-block; 
-    background-color: #57b0f8;
+    background-color: #66B7F9;
     color: #000000; /* needed to override the default link color */
     font-weight: 400;
     padding: 10px;
@@ -307,14 +311,14 @@ img {
   .button.contact {
         text-decoration: none;
         display: inline-block; 
-        background-color: transparent;
-        color: #57b0f8;
+        background-color: #444;
+        color: #66B7F9;
         font-weight: 400;
         padding: 10px;
         border-radius: 45px;
         border-bottom: 2px solid #dbdfeb; /* width of the border, type, color */
         transition: 0.2s opacity;
-        border: 2px solid #57b0f8;
+        border: 2px solid #66B7F9;
         text-transform: capitalize;
         transition-duration: 0.2s;
         transition-property: opacity;
@@ -327,7 +331,7 @@ img {
 
   .button.contact:hover {
         opacity: 0.8; /* Reduces the opacity of the button to 80% */
-        color: #000000;
+        color: #ffffff;
         text-decoration: none;
       }
     
@@ -351,7 +355,7 @@ img {
 /* Style the button that is used to open and close the collapsible content */
 
 .collapsible {
-  background-color: #57b0f8;
+  background-color: #66B7F9;
   color: #444;
   cursor: pointer;
   padding: 15px;
