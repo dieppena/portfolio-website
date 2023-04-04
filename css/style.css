@@ -584,7 +584,8 @@ Medium devices (640px and larger)
 }
 
 #who h2 {
-  text-align: left; 
+  text-align: center; 
+  margin-top: -5px;
 }
 
 #plutopay h2 {
