@@ -14,7 +14,7 @@
   <body><!-- Body Tag Begin -->
     <header><!-- Header Begin -->
       <div class="navtoggle" id="myNavtoggle">
-      <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up"></i></button>
       <div class="container" >
         <div class="logo">
           <img src="img/logo/img_logo_1x.png" alt="Logo">
@@ -147,7 +147,7 @@
           <li><a href="#section-1">01 - Discover</a><br></li>
           <li><a href="#section-2">02 - Define</a><br></li>
           <li><a href="#section-3">03 - Ideate</a><br></li>
-          <li><a href="#section-4">04 - Prototype</a><br></li>
+          <li><a href="#section-4">04 - Design &amp; Development</a><br></li>
           <li><a href="#section-5">05 - Test</a><br></li>
           </ul>
         </div>
@@ -159,20 +159,41 @@
     </div> <!-- column end -->
       </div> <!-- row end -->
       <div class="container" >
+
+  
        <div id="designprocess1">
           <h2>My Design Process</h2>
         </div>
-        <ul> 
-          <li>Discover</li>
-          <li>Define</li>
-          <li>Ideate</li>
-          <li>Design &amp; Develop</li>
-          <li>Test</li>
-        </ul> 
-          <picture>
-            <source srcset="img/plutopay/img_plutopay_process1_1x.jpg" media="(max-width:767px)">
-            <img src="img/plutopay/img_plutopay_process1_1x.jpg" alt="Process 1">
-          </picture>
+
+        <nav class="slidemenu">
+          <!-- Item 1 -->
+          <input type="radio" name="slideItem" id="slide-item-1" class="slide-toggle" checked/>
+          <label for="slide-item-1"> <p class="icon">01</p><span><a href="#section-1"></a>Discover</span></label>
+          
+          <!-- Item 2 -->
+         <input type="radio" name="slideItem" id="slide-item-2" class="slide-toggle"/>
+         <label for="slide-item-2"> <p class="icon">02</p><span><a href="#section-2">Define</a></span></label>
+          
+          <!-- Item 3 -->
+          <input type="radio" name="slideItem" id="slide-item-3" class="slide-toggle"/>
+          <label for="slide-item-3"><p class="icon">03</p><span><a href="#section-3">Ideate</a></span></label>
+          
+          <!-- Item 4 -->
+          <input type="radio" name="slideItem" id="slide-item-4" class="slide-toggle"/>
+          <label for="slide-item-4"><p class="icon">04</p><span><a href="#section-4">Design &amp; Discover</a></span></label>
+
+          <!-- Item 5 -->
+          <input type="radio" name="slideItem" id="slide-item-5" class="slide-toggle"/>
+          <label for="slide-item-5"><p class="icon">05</p><span><a href="#section-5">Test</a></span></label>
+          
+          <div class="clear"></div>
+
+          <!-- Bar -->
+          <div class="slider">
+            <div class="bar"></div>
+          </div>
+        </nav>
+
 
           <h3 id="section-1">01 - Discover</h3>
           <h4>Problem</h4>
@@ -183,52 +204,57 @@
           </h4>
           <p>Researched layouts and designs of portfolio websites on platforms such as Behance, Dribble, Journo Portfolio, and etc..</p>
         
-          <h2>My Design Process Conintued..</h2>
 
-          <picture>
-            <source srcset="img/plutopay/img_plutopay_process2_1x.jpg" media="(max-width:767px)">
-            <img src="img/plutopay/img_plutopay_process2_1x.jpg" alt="Process 2">
-          </picture>
           <h3 id="section-2">02 - Define</h3>
           <h4>Personas</h4>
           <p>Creating personas helped me consider what type of content to include on my portfolio site and what their user journey navigation throughout it might entail.</p>
           <p><b>Who are they?</b></p>
+          <div id="recruiter">
+          <picture>
+            <source srcset="img/website/img_website_recruiter_1x.jpg" media="(max-width:767px)">
+            <img src="img/website/img_website_recruiter_1x.jpg" alt="Recruiter">
+          </picture>
+        </div>
           <h5>Recruiter</h5>
           <p>She is using LinkedIn to scout for someone who meets the company’s requirements. She stumbles across a profile that contains a portfolio website and views it from her desktop.  She’s mostly interested in seeing the skills, their resume, and skimming through a summary of their work.  
           </p>
+          <div id="manager">
+          <picture>
+            <source srcset="img/website/img_website_manager_1x.jpg" media="(max-width:767px)">
+            <img src="img/website/img_website_manager_1x.jpg" alt="Manager">
+          </picture>
+        </div>
           <h5>Hiring Manager</h5>
           <p>He frequently checks his emails from his mobile device and reviews a portfolio website provided to him by a recruiter between meetings.  This candidate peeked his interest so he flags the email so that he can review the portfolio thoroughly.  He wants to learn about this candidate to make sure they are the right fit and is interested in reading about the person and viewing an applicable projects in detail before contacting them.
           </p>
-          <picture>
-            <source srcset="img/plutopay/img_plutopay_personas_1x.jpg" media="(max-width:767px)">
-            <img src="img/plutopay/img_plutopay_personas_1x.jpg" alt="User Personas">
-          </picture>
-          <h4>2.2 User Journeys</h4>
-          <p>After user persona creation, I developed 3 user journeys, all having different scenarios.  The goal in this was to convey a visual story of the process these personas would work through to accomplish a specific goal.</p>
-          <picture>
-            <source srcset="img/plutopay/img_plutopay_journeys_1x.jpg" media="(max-width:767px)">
-            <img src="img/plutopay/img_plutopay_journeys_1x.jpg" alt="User Journeys">
-          </picture>
-          <h2>My Design Process Conintued...</h2>
-          <picture>
-            <source srcset="img/plutopay/img_plutopay_process3_1x.jpg" media="(max-width:767px)">
-            <img src="img/plutopay/img_plutopay_process3_1x.jpg" alt="Splash">
-          </picture>
+
+ 
           <h3 id="section-3">03 - Ideate</h3>
           <h4>Wireframes</h4>
-          <p>I created mid-fidelity wireframes of how I wanted the layout of design to look. With these wireframes, I was able to start building my HTML files following the layout of the wireframes.
+          <p>I created mid-fidelity wireframes of how I wanted the layout of the design to look.  I started to build my HTML files following the layout of the wireframes.
           </p>
           <h4>Responsiveness</h4>
           <p>Created wireframes for mobile, tablet, and desktop versions.  Starting with a mobile first design, I adjusted the layout of images and text to fit larger viewports.
           </p>
             <h5>Mobile Layout</h5>
-            <ul>Single column view of all content.</ul>
+            Single column view of all content.
+            <div id="mobile">
+              <div id="overflowmobile">
+                <img src="img/website/img_website_mobile_1x.jpg" alt="Mobile1">
+      </div>
             <h5>Tablet Layout</h5>
-            <ul>Content will move to a two-column layout and image sizing will adjust on viewports 640px and larger.</ul>
+            Content will move to a two-column layout where applicable and image sizing will adjust on viewports 640px and larger.
+            <div id="overflowtablet">
+                <img src="img/website/img_website_tablet_index_1x.jpg" alt="Tablet Index">
+                <img src="img/website/img_website_tablet_about_1x.jpg" alt="Tablet About">
+          </div>
             <h5>Desktop Layout</h5>
-            <ul>Content and images will adjust to fit a viewport of 1024px and larger.</ul>
+            Content and images will adjust to fit a viewport of 1024px and larger.
+              <div id="overflowdesktop">
+                <img src="img/website/img_website_desktop_index_1x.jpg" alt="Desktop Index">
+                <img src="img/website/img_website_desktop_about_1x.jpg" alt="Desktop About">
+            </div>
 
-            
           <h4>Research: 
           </h4>
           <p>Researched layouts and designs of portfolio websites on platforms such as Behance, Dribble, Journo Portfolio, and etc..</p>
@@ -241,7 +267,7 @@
           <p>Dosis - a clean and modern display font will be used for headings and the body.</p>
           <h5>Buttons</h5>
           <p>Will have rounded corners with a radius of 45px.</p>
-          <h5>Color Pallette</h5>
+          <h5>Color Palette</h5>
           <p>I applied, black, shades of grey, shades of blue and white to my website. The black and grey combination will give a simple, modern, and sophisticated look/style to my website. The shades of blue will give the website a pop of color.  I will be using white for my background to help accent the dominant colors. I feel that by doing this, the visitors will be able to focus on my projects without feeling overwhelmed by any additional colors I chose for my app designs. This color palette will also give me freedom to choose my images and avoid them potentially clashing with one another and/or the overall color scheme. 
           </p>
           <h4>Development</h4>
@@ -344,6 +370,7 @@
           </picture>
         </div>
       </div>
+    </div>
     </div><!-- Work Ends -->
   </main><!-- Main Ends -->
   <hr>
