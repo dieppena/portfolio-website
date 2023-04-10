@@ -570,7 +570,7 @@ img {
   border-bottom: 1px solid #000;
 }
 
-
+/*AutoScroll..https://codepen.io/JackTingleALBD/pen/yLxmqmR/*/
 
 .menu-container {
   display: flex;
@@ -686,7 +686,54 @@ img {
   box-shadow: 0px 0px 4px 0px;
 }
 
+/*CSS,JS,index*/
 
+#slideshow {
+  overflow: hidden;
+  height: 410px;
+  width: 628px;
+  margin: 0 auto;
+}
+
+.slide-wrapper {
+  width: 2912px;
+  animation: slide 25s ease infinite;
+}
+
+.slide {
+  float: left;
+  height: 510px;
+  width: 728px;
+}
+
+.slide:nth-child(1) {
+  background: none;
+}
+
+.slide:nth-child(2) {
+  background: none;
+}
+
+.slide:nth-child(3) {
+  background: none;
+}
+
+
+.slide-number {
+  color: #fff;
+  text-align: center;
+  font-size: 10em;
+}
+
+@-webkit-keyframes slide {
+  20% {margin-left: 0px;}
+  30% {margin-left: -728px;}
+  50% {margin-left: -728px;}
+  60% {margin-left: -1456px;}
+  70% {margin-left: -1456px;}
+  80% {margin-left: -2184px;}
+  90% {margin-left: -2184px;}
+}
 
 /* ==============================
 Medium devices (640px and larger)
