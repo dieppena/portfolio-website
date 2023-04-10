@@ -349,8 +349,7 @@ img {
   
   .resumebutton {
             text-align: left;
-          }  
-        
+          } 
 
 /* Style the button that is used to open and close the collapsible content */
 
@@ -394,6 +393,298 @@ img {
   content: "\2796"; /* Unicode character for "minus" sign (-) */
 }
 
+
+
+/* port web nav  https://freefrontend.com/css-horizontal-menus/*/
+
+.clear{
+  clear: both;
+}
+
+
+.slide-toggle{
+  display: none;
+}
+
+.slidemenu{
+  font-family: dosis, sans-serif;
+  max-width: 500px;
+  margin: 20px auto;
+  overflow: hidden;
+}
+
+.slidemenu label{
+  width: 20%;
+  text-align: center;
+  display: block;
+  float: left;
+  color: #444;
+  opacity: 0.2;
+
+}
+
+.slidemenu label:hover{
+  cursor: pointer;
+  color: #44a6f7;
+}
+
+
+.slidemenu label span{
+  display: block;
+  padding: 1px;    
+}
+
+.slidemenu label .icon{
+  font-size: 18px;
+  border: solid 2px #444;
+  text-align: center;
+  height: 50px;
+  width: 50px;
+  display: block;
+  margin: 0 auto;
+  line-height: 50px;
+  border-radius: 50%;
+}
+
+/*Bar Style*/
+
+.slider{
+  width: 100%;
+  height: 5px;
+  display: block;
+  background: #797878;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.slider .bar{
+  width: 25%;
+  height: 5px;
+  background: #66B7F9;
+  border-radius: 5px;
+}
+
+/*Animations*/
+.slidemenu label, .slider .bar {
+  transition: all 500ms ease-in-out;
+  -webkit-transition: all 500ms ease-in-out;
+  -moz-transition: all 500ms ease-in-out;
+}
+
+/*Toggle*/
+
+.slidemenu .slide-toggle:checked + label{
+  opacity: 1;
+}
+
+.slidemenu #slide-item-1:checked ~ .slider .bar{ margin-left: 0; }
+.slidemenu #slide-item-2:checked ~ .slider .bar{ margin-left: 20%; }
+.slidemenu #slide-item-3:checked ~ .slider .bar{ margin-left: 40%; }
+.slidemenu #slide-item-4:checked ~ .slider .bar{ margin-left: 60%; }
+.slidemenu #slide-item-5:checked ~ .slider .bar{ margin-left: 80%; }
+
+/*AutoScroll..https://www.damiisdandy.com/articles/create-infinite-auto-scroll-animation-with-pure-css/*/
+.scroll-parent {
+  position: relative;
+  width: 85vw;
+  height: 50rem;
+  overflow-x: hidden;
+}
+
+.scroll-element {
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  animation: primary 30s linear infinite;
+}
+
+@keyframes primary {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-100px);
+  }
+}
+.primary-mobile {
+  animation: primary 15s linear infinite;
+}
+
+.secondary-mobile {
+  animation: secondary 15 linear infinite;
+}
+
+@keyframes primary {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-100px);
+  }
+}
+
+@keyframes secondary {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-100px);
+  }
+}
+
+#overflowmobile {
+  background: #000;
+  color: rgb(12, 12, 12);
+  padding: 8px;
+  padding-bottom: 8px;
+  width: 100%;
+  height: 400px;
+  overflow: scroll;
+  border: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+
+#overflowtablet {
+  background: #000;
+  color: rgb(12, 12, 12);
+  padding: 8px;
+  padding-bottom: 8px;
+  width: 100%;
+  height: 500px;
+  overflow: scroll;
+  border: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+
+#overflowdesktop {
+  background: #000;
+  color: rgb(12, 12, 12);
+  padding: 8px;
+  padding-bottom: 8px;
+  width: 100%;
+  height: 500px;
+  overflow: scroll;
+  border: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+
+
+
+.menu-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+}
+
+.menu {
+  position: relative;
+}
+
+.circle-logo {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #d4d1d1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color:#000
+}
+
+.circle-logo img {
+  max-width: 50%;
+  max-height: 50%;
+}
+
+.tabs {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.tabs li {
+  position: absolute;
+  width: 100px;
+  height: 40px;
+  border-radius: 45px;
+  background-color: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transform-origin: 150px 150px;
+  opacity: 0;
+  transition: transform 0.7s, opacity 0.3s, visibility 0.7s;
+}
+
+
+.menu.open .tabs li {
+  opacity: 1;
+  visibility: visible;
+}
+
+.menu.open .tabs li:nth-child(1) {
+  transition-delay: 0s;
+  transform: translate(50px, -247px) rotate(0deg);
+  background-color: #000;
+  box-shadow: 0px 0px 4px 0px;
+  color:#fff;
+}
+
+.menu.open .tabs li:nth-child(2) {
+  transition-delay: 0.1s;
+  transform: translate(-50px, -150px) rotate(90deg);
+  background-color: #444;
+  box-shadow: 0px 0px 4px 0px;
+  color:#FFF;
+}
+
+.menu.open .tabs li:nth-child(3) {
+  transition-delay: 0.2s;
+  transform: translate(-150px, -250px) rotate(180deg);
+  background-color: #fff;
+  box-shadow: 0px 0px 4px 0px;
+
+}
+
+.menu.open .tabs li:nth-child(4) {
+  transition-delay: 0.3s;
+  transform: translate(-45px, -350px) rotate(270deg);
+  background-color: #66B7F9;
+  box-shadow: 0px 0px 4px 0px;
+}
+
+.menu.open .tabs li:nth-child(5) {
+  transition-delay: 0.4s;
+  transform: translate(22px, -181px) rotate(45deg);
+  background-color: #dbdfeb;
+  box-shadow: 0px 0px 4px 0px;
+}
+
+.menu.open .tabs li:nth-child(6) {
+  transition-delay: 0.5s;
+  transform: translate(-120px, -180px) rotate(135deg);
+  background-color: #b9BED1;
+  box-shadow: 0px 0px 4px 0px;
+}
+
+.menu.open .tabs li:nth-child(7) {
+  transition-delay: 0.6s;
+  transform: translate(-120px, -320px) rotate(225deg);
+  background-color: #185f64;
+  box-shadow: 0px 0px 4px 0px;
+}
+
+.menu.open .tabs li:nth-child(8) {
+  transition-delay: 0.7s;
+  transform: translate(20px, -322px) rotate(315deg);
+  background-color: #39A187;
+  box-shadow: 0px 0px 4px 0px;
+}
 
 
 
@@ -583,8 +874,13 @@ Medium devices (640px and larger)
     text-align: left; 
 }
 
-#who h2 {
+#website h2 {
   text-align: left; 
+}
+
+#who h2 {
+  text-align: center; 
+  margin-top: -5px;
 }
 
 #plutopay h2 {
@@ -629,7 +925,6 @@ Medium devices (640px and larger)
   max-width: 140px;
   position: left;
 }
-
 
 }
 
@@ -954,4 +1249,5 @@ section img {
 @media only screen and (max-width: 300px) {
   .text {font-size: 11px}
 }
+
 
