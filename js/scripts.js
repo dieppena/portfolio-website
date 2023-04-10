@@ -67,3 +67,10 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 
+// Color menu
+const circleLogo = document.getElementById('circle-logo');
+const menu = document.querySelector('.menu');
+
+circleLogo.addEventListener('click', () => {
+  menu.classList.toggle('open');
+});

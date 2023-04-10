@@ -570,6 +570,124 @@ img {
   border-bottom: 1px solid #000;
 }
 
+
+
+.menu-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+}
+
+.menu {
+  position: relative;
+}
+
+.circle-logo {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #d4d1d1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color:#000
+}
+
+.circle-logo img {
+  max-width: 50%;
+  max-height: 50%;
+}
+
+.tabs {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.tabs li {
+  position: absolute;
+  width: 100px;
+  height: 40px;
+  border-radius: 45px;
+  background-color: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transform-origin: 150px 150px;
+  opacity: 0;
+  transition: transform 0.7s, opacity 0.3s, visibility 0.7s;
+}
+
+
+.menu.open .tabs li {
+  opacity: 1;
+  visibility: visible;
+}
+
+.menu.open .tabs li:nth-child(1) {
+  transition-delay: 0s;
+  transform: translate(50px, -247px) rotate(0deg);
+  background-color: #000;
+  box-shadow: 0px 0px 4px 0px;
+  color:#fff;
+}
+
+.menu.open .tabs li:nth-child(2) {
+  transition-delay: 0.1s;
+  transform: translate(-50px, -150px) rotate(90deg);
+  background-color: #444;
+  box-shadow: 0px 0px 4px 0px;
+  color:#FFF;
+}
+
+.menu.open .tabs li:nth-child(3) {
+  transition-delay: 0.2s;
+  transform: translate(-150px, -250px) rotate(180deg);
+  background-color: #fff;
+  box-shadow: 0px 0px 4px 0px;
+
+}
+
+.menu.open .tabs li:nth-child(4) {
+  transition-delay: 0.3s;
+  transform: translate(-45px, -350px) rotate(270deg);
+  background-color: #66B7F9;
+  box-shadow: 0px 0px 4px 0px;
+}
+
+.menu.open .tabs li:nth-child(5) {
+  transition-delay: 0.4s;
+  transform: translate(22px, -181px) rotate(45deg);
+  background-color: #dbdfeb;
+  box-shadow: 0px 0px 4px 0px;
+}
+
+.menu.open .tabs li:nth-child(6) {
+  transition-delay: 0.5s;
+  transform: translate(-120px, -180px) rotate(135deg);
+  background-color: #b9BED1;
+  box-shadow: 0px 0px 4px 0px;
+}
+
+.menu.open .tabs li:nth-child(7) {
+  transition-delay: 0.6s;
+  transform: translate(-120px, -320px) rotate(225deg);
+  background-color: #185f64;
+  box-shadow: 0px 0px 4px 0px;
+}
+
+.menu.open .tabs li:nth-child(8) {
+  transition-delay: 0.7s;
+  transform: translate(20px, -322px) rotate(315deg);
+  background-color: #39A187;
+  box-shadow: 0px 0px 4px 0px;
+}
+
+
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
@@ -807,7 +925,6 @@ Medium devices (640px and larger)
   max-width: 140px;
   position: left;
 }
-
 
 }
 
