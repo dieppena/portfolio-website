@@ -695,31 +695,31 @@ img {
   margin: 0 auto;
 }
 
-.slide-wrapper {
+.slide1-wrapper {
   width: 2912px;
   animation: slide 25s ease infinite;
 }
 
-.slide {
+.slide1 {
   float: left;
   height: 510px;
   width: 728px;
 }
 
-.slide:nth-child(1) {
+.slide1:nth-child(1) {
   background: none;
 }
 
-.slide:nth-child(2) {
+.slide1:nth-child(2) {
   background: none;
 }
 
-.slide:nth-child(3) {
+.slide1:nth-child(3) {
   background: none;
 }
 
 
-.slide-number {
+.slide1-number {
   color: #fff;
   text-align: center;
   font-size: 10em;
@@ -735,6 +735,32 @@ img {
   90% {margin-left: -2184px;}
 }
 
+
+/*Carousel..https://codepen.io/junihbhatt/pen/wvyoBQp*/
+
+.outer-box{
+  width: 300px;
+  height: 300px;
+  display: flex;
+  overflow: auto;
+  scroll-snap-type: x mandatory;
+}
+.outer-box .inner-box{
+  flex: 0 0 300px;
+  background: none;
+  height: 100%;
+  display: grid;
+  scroll-snap-align: start;
+  place-items: center;
+  font-size: 80px;
+  color: #8f8f8f;
+      }
+
+#editors{
+  height: 50%;
+  width: 50%;
+  text-align: center;
+}
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
