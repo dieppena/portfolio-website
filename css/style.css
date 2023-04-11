@@ -687,7 +687,11 @@ img {
 }
 
 /*CSS,JS,index*/
-
+body #slideshow {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
 #slideshow {
   overflow: hidden;
   height: 410px;
@@ -718,6 +722,18 @@ img {
   background: none;
 }
 
+.slide1:nth-child(4) {
+  background: none;
+}
+
+.slide1:nth-child(5) {
+  background: none;
+}
+
+.slide1:nth-child(6) {
+  background: none;
+}
+
 
 .slide1-number {
   color: #fff;
@@ -738,29 +754,35 @@ img {
 
 /*Carousel..https://codepen.io/junihbhatt/pen/wvyoBQp*/
 
+body.outer-box {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+  overflow: hidden;
+}
 .outer-box{
-  width: 300px;
-  height: 300px;
+  width: 500px;
+  height: 350px;
   display: flex;
   overflow: auto;
   scroll-snap-type: x mandatory;
 }
 .outer-box .inner-box{
-  flex: 0 0 300px;
-  background: none;
+  flex: 0 0 490px;
+  background: #fff;
   height: 100%;
   display: grid;
   scroll-snap-align: start;
   place-items: center;
   font-size: 80px;
-  color: #8f8f8f;
-      }
-
-#editors{
-  height: 50%;
-  width: 50%;
-  text-align: center;
+  color: #fff;
+  padding-left: 5px;
 }
+
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
