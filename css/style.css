@@ -483,56 +483,7 @@ img {
 .slidemenu #slide-item-4:checked ~ .slider .bar{ margin-left: 60%; }
 .slidemenu #slide-item-5:checked ~ .slider .bar{ margin-left: 80%; }
 
-/*AutoScroll..https://www.damiisdandy.com/articles/create-infinite-auto-scroll-animation-with-pure-css/*/
-.scroll-parent {
-  position: relative;
-  width: 85vw;
-  height: 50rem;
-  overflow-x: hidden;
-}
-
-.scroll-element {
-  width: inherit;
-  height: inherit;
-  position: absolute;
-  left: 0%;
-  top: 0%;
-  animation: primary 30s linear infinite;
-}
-
-@keyframes primary {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-100px);
-  }
-}
-.primary-mobile {
-  animation: primary 15s linear infinite;
-}
-
-.secondary-mobile {
-  animation: secondary 15 linear infinite;
-}
-
-@keyframes primary {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-100px);
-  }
-}
-
-@keyframes secondary {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-100px);
-  }
-}
+/*scroll containers*/
 
 #overflowmobile {
   background: #000;
@@ -713,9 +664,47 @@ img {
 
 
 
-/*Carousel..https://codepen.io/junihbhatt/pen/wvyoBQp*/
+/*fade in out..https://codepen.io/tazaryoot/pen/gjEeea*/
+#image1 img{
+max-width: 10%;
+}
 
-
+.image1-wrapper {
+  width: 700px;
+  position
+}
+.gap {
+  width: 100%;
+  padding: 5px;
+  overflow: hidden;
+  position: relative;
+}
+.image1 {
+  width: 100%;
+  height: 100%;
+  margin-left: 0px;
+  margin-top: -15px;
+  animation: MOVE-BG 12s linear infinite alternate;
+  animation-name: MOVE-BG;
+  animation-duration: 12s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+@-webkit-keyframes MOVE-BG {
+	0% {
+    transform: scale(1) translate(0, 0);
+  }
+	50% {
+    transform: scale(1.2) translate(5px, 5px);
+  }
+  100% {
+    transform: scale(1.3) translate(-5px,5px);
+  }
+}
 
 /* ==============================
 Medium devices (640px and larger)
@@ -824,6 +813,14 @@ Medium devices (640px and larger)
     margin-left: 14px;
     margin-right: auto;
 }  
+
+#top img {
+  max-width: 50%;
+}
+
+#bottom img {
+    max-width: 50%;
+}
 
 /* Next & previous buttons */
 .prev, .next {
