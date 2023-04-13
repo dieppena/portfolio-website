@@ -1169,90 +1169,90 @@ section img {
   
 
 /*color cards..  https://codepen.io/medienmarmelade/pen/ZEYrMjw*/
-  .cardbox {
-    display:-webkit-flex;
-    display:flex;
-    -webkit-flex-flow:row wrap;
-    flex-flow:row wrap;
-    -webkit-align-content: center;
-    align-content: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    background:none;
-    box-shadow:none;
-    width:100vw;
-    height:100%;
-    min-height:30vh;
-    padding-right: 30px;
-  
-  }
-  .card {
-    width:calc(95px - 1rem);
-    height:calc(95px - 1rem);
-    position:relative;
-    -webkit-transform-style:preserve-3d;
-    transform-style:preserve-3d;
-    -webkit-perspective:1000px;
-    perspective:1000px;
-    margin:0.3rem;
-    box-shadow: 0px 0px 4px 0px;
-  }
-  .front,.back {
-    position:absolute;
-    top:0;left:0;width:100%;height:100%;
-    -webkit-transform-style:preserve-3d;
-    transform-style: preserve-3d;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    transition:transform 0.65s ease 0.15s;
-  }
-  .front{
-    transform: rotateY(0deg);
-  }
-  .back{
-    transform: rotateY(180deg);
-  }
-  .card:hover .front {
-    transform: rotateY(-180deg);
-    transition-delay:0s;
-  }
-  .card:hover .back {
-    transform: rotateY(0deg);
-    transition-delay:0s;
-  }
-  .cardcontent {
-    margin:0;text-align:center;position:absolute; top:0;left:0;width:100%;height:100%;
-    display:-webkit-flex;
-    -webkit-flex-direction:column;
-    -webkit-justify-content:center;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    color:#fff;
-    font-family:dosis;
-    font-size:.8rem;}
-  
-  .card1 .front{background:#000;}
-  .card1 .back{background:#000;}
-  
-  .card2 .front{background:#fff;}
-  .card2 .back{background:#fff;}
-  
-  .card3 .front{background:#444;}
-  .card3 .back{background:#444;}
-  
-  .card4 .front{background:#B9BED1;}
-  .card4 .back{background:#B9BED1;}
+.cardbox {
+  display:-webkit-flex;
+  display:flex;
+  -webkit-flex-flow:row wrap;
+  flex-flow:row wrap;
+  -webkit-align-content: center;
+  align-content: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  background:none;
+  box-shadow:none;
+  width:100vw;
+  height:100%;
+  min-height:30vh;
+  margin-left: -15px;
 
-  .card5 .front{background:#DBDFEB;}
-  .card5 .back{background:#DBDFEB;}
-  
-  .card6 .front{background:#66B7F9;}
-  .card6 .back{background:#66B7F9;}
-  
-  .card7 .front{background:#185f64;}
-  .card7 .back{background:#185f64;}
-  
-  .card8 .front{background:#39A187;}
-  .card8 .back{background:#39A187;}
+}
+.card {
+  width:calc(95px - 1rem);
+  height:calc(95px - 1rem);
+  position:relative;
+  -webkit-transform-style:preserve-3d;
+  transform-style:preserve-3d;
+  -webkit-perspective:1000px;
+  perspective:1000px;
+  margin:0.3rem;
+  box-shadow: 0px 0px 4px 0px;
+}
+.front,.back {
+  position:absolute;
+  top:0;left:0;width:100%;height:100%;
+  -webkit-transform-style:preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transition:transform 0.65s ease 0.15s;
+}
+.front{
+  transform: rotateY(0deg);
+}
+.back{
+  transform: rotateY(180deg);
+}
+.card:hover .front {
+  transform: rotateY(-180deg);
+  transition-delay:0s;
+}
+.card:hover .back {
+  transform: rotateY(0deg);
+  transition-delay:0s;
+}
+.cardcontent {
+  margin:0;text-align:center;position:absolute; top:0;left:0;width:100%;height:100%;
+  display:-webkit-flex;
+  -webkit-flex-direction:column;
+  -webkit-justify-content:center;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  color:#fff;
+  font-family:dosis;
+  font-size:.8rem;}
+
+.card1 .front{background:#000;}
+.card1 .back{background:#000;}
+
+.card2 .front{background:#fff;}
+.card2 .back{background:#fff;}
+
+.card3 .front{background:#444;}
+.card3 .back{background:#444;}
+
+.card4 .front{background:#B9BED1;}
+.card4 .back{background:#B9BED1;}
+
+.card5 .front{background:#DBDFEB;}
+.card5 .back{background:#DBDFEB;}
+
+.card6 .front{background:#66B7F9;}
+.card6 .back{background:#66B7F9;}
+
+.card7 .front{background:#185f64;}
+.card7 .back{background:#185f64;}
+
+.card8 .front{background:#39A187;}
+.card8 .back{background:#39A187;}
