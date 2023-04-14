@@ -170,7 +170,7 @@ nav > ul > li > a:active { /* selected link */
     color: #a1bbce;
 }
 
- 
+
 
  /* Sets font and sizing */
 body {
@@ -228,6 +228,7 @@ img {
  #plutopay {
   margin-top: -20px;
 }
+
 
    /* Hyperlinks */
 
@@ -411,6 +412,9 @@ img {
   max-width: 500px;
   margin: 20px auto;
   overflow: hidden;
+  justify-content: center;
+  box-sizing: border-box; 
+  max-width: 100%;
 }
 
 .slidemenu label{
@@ -606,9 +610,18 @@ Medium devices (640px and larger)
         width: 60%;
       }
 
-      .col-md-7 {
+      .col-md-8 {
         width: 70%;
       }
+
+      .col-md-9 {
+        width: 90%;
+      }
+
+      .col-md-10 {
+        width: 100%;
+      }
+
 
       [class*="col-"] {
       float: left;
@@ -680,6 +693,7 @@ Medium devices (640px and larger)
   border-radius: 0 3px 3px 0;
   user-select: none;
 }
+
 
 /* The dots/bullets/indicators */
 .dot {
@@ -793,6 +807,29 @@ Medium devices (640px and larger)
   position: left;
 }
 
+.slidemenu {
+  margin-right: 120px;
+}
+  
+
+#recruiter {
+ max-width: 90%;
+ padding-top: 40px;
+}
+
+#manager {
+max-width: 90%;
+padding-top: 40px;
+}
+
+.projectbutton {
+  text-align: center;
+} 
+
+#hm h5{
+  text-align: right;
+  padding-top: 20px;
+}
 }
 
 
@@ -802,6 +839,12 @@ Medium devices (640px and larger)
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px)  {
+  .col-lg-1 {
+    width: 30%;
+}
+  .col-lg-2 {
+    width: 33.3%;
+}
     .col-lg-3 {
         width: 24%;
     }
@@ -820,6 +863,18 @@ Large devices (1024px or larger)
         width: 58.33%;
         padding-bottom: 32px;
     }
+
+    .col-lg-8 {
+      width: 60%;
+  }
+
+  .col-lg-9 {
+    width: 70%;
+}
+
+.col-lg-10 {
+  width: 40%;
+}
     .col-lg-12 {
         width: 100%;
         margin-top: -18px;
@@ -939,6 +994,42 @@ Large devices (1024px or larger)
 .collapsible {
   max-width: 175px;
   position: left;
+}
+
+.slidemenu {
+  margin-right: 325px;
+}
+  
+
+#recruiter {
+ width: 70%;
+ padding-top: 20px;
+}
+
+#manager {
+  width: 70%;
+  margin-top: -275px;
+ }
+ 
+
+
+
+.projectbutton {
+  text-align: center;
+} 
+
+.image1-wrapper {
+  margin-left: 175px;
+}
+
+#hm h5{
+  text-align: left;
+  padding-top: 20px;
+}
+
+#define h3{
+  text-align: left;
+
 }
 
 
@@ -1118,14 +1209,13 @@ section img {
 }
 
 
-
-
 /*fade in out..https://codepen.io/tazaryoot/pen/gjEeea*/
 .layout * {
   box-sizing: border-box; 
+  max-width: 100%;
 }
 #image1 img{
-  max-width: 10%;
+  max-width: 100%;
   }
   
   .image1-wrapper {
@@ -1256,3 +1346,6 @@ section img {
 
 .card8 .front{background:#39A187;}
 .card8 .back{background:#39A187;}
+
+
+
