@@ -69,8 +69,6 @@ for (i = 0; i < coll.length; i++) {
 
 
 
-// Color menu
-
 // Color menu squares
 
 // When page loads, it will trigger the circle menu
