@@ -844,6 +844,10 @@ padding-top: 40px;
   margin-top:  120px;
 }
 
+.cardbox {
+  margin-top:  150px;
+}
+
 }
 
 
@@ -1067,6 +1071,11 @@ Large devices (1440px or larger)
     margin-top:  95px;
   }
    
+
+  .cardbox {
+    margin-top:  100px;
+  }
+  
 }
 
 
