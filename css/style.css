@@ -352,9 +352,7 @@ img {
             text-align: center;
           } 
   
-  .resumebutton {
-            text-align: left;
-          } 
+
 
 /* Style the button that is used to open and close the collapsible content */
 
@@ -559,7 +557,9 @@ img {
       text-align: center;
     } 
     
-  
+    .resumebutton {
+      text-align: center;
+    } 
 
 
 /* ==============================
@@ -599,6 +599,9 @@ Medium devices (640px and larger)
         display: block;
     }
 
+    .col-md-1 {
+      width: 33.3%;
+    }
     .col-md-2 {
       width: 25%;
     }
@@ -663,6 +666,29 @@ Medium devices (640px and larger)
   max-width: 250px;
 }
 
+#whotext {
+margin-top: none;
+}
+
+#who {
+  margin-top: 25px;
+  }
+
+.skills h3 {
+   text-align: left;
+  }
+
+.resume h3 {
+   text-align: center;
+  }
+
+  .resumebutton {
+    text-align: left;
+    margin-top: 30px;
+    margin-left: -80px;
+  } 
+  
+
 #profile img {
   max-width: 200px;
   position: relative;
@@ -721,10 +747,10 @@ Medium devices (640px and larger)
 
 #splashindex img {
   max-width: 175px;
-  padding-top: 60px;
+  padding-top: none;
   position: relative;
   display: block;
-  margin-left: 35px;
+  margin-left: none;
   margin-right: auto;
   text-align: right; 
 
@@ -746,7 +772,7 @@ Medium devices (640px and larger)
 }
 
 .center {
-  text-align: left; 
+  text-align: center; 
 }
 
 .center.button {
@@ -778,6 +804,11 @@ Medium devices (640px and larger)
 #plutopay h2 {
   text-align: left; 
 }
+
+#casestudy {
+  margin-top: -80px;
+}
+
 
 
 #workindex .row {
@@ -847,6 +878,7 @@ padding-top: 40px;
 .cardbox {
   margin-top:  150px;
 }
+
 
 }
 
@@ -1046,6 +1078,11 @@ Large devices (1024px or larger)
   margin-top:  95px;
 }
 
+.resumebutton {
+  text-align: left;
+  margin-top: 30px;
+  margin-left: -190px;
+} 
 
 }
 
