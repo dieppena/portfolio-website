@@ -91,6 +91,10 @@ header {
     text-align: center; /* Centers text */
   }
 
+  #fp h2 {
+    text-align: left; 
+  }
+
   h2 {
     text-align: center; /* Centers text */
   }
@@ -551,6 +555,13 @@ img {
 }
 
 
+  .projectbutton {
+      text-align: center;
+    } 
+    
+  
+
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
@@ -822,17 +833,18 @@ max-width: 90%;
 padding-top: 40px;
 }
 
-.projectbutton {
-  text-align: center;
-} 
 
 #hm h5{
   text-align: right;
   padding-top: 20px;
 }
+
+.projectbutton {
+  text-align: left;
+  margin-top:  120px;
 }
 
-
+}
 
 
 /* ==============================
@@ -1011,13 +1023,6 @@ Large devices (1024px or larger)
   margin-top: -275px;
  }
  
-
-
-
-.projectbutton {
-  text-align: center;
-} 
-
 .image1-wrapper {
   margin-left: 175px;
 }
@@ -1029,11 +1034,46 @@ Large devices (1024px or larger)
 
 #define h3{
   text-align: left;
+}
 
+
+.projectbutton {
+  text-align: left;
+  margin-top:  95px;
 }
 
 
 }
+
+
+
+
+/* ==============================
+Large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px)  {
+
+  #manager {
+    width: 70%;
+    margin-bottom: 100px;
+   }
+
+   #managertext {
+    margin-top: 200px;
+   }
+
+   .projectbutton {
+    text-align: left;
+    margin-top:  95px;
+  }
+   
+}
+
+
+
+/* ==============================
+keyframes
+================================= */
 
 section {
   position: relative;
@@ -1270,10 +1310,10 @@ section img {
   justify-content: center;
   background:none;
   box-shadow:none;
-  width:100vw;
+  width:90vw;
   height:100%;
   min-height:30vh;
-  margin-left: -15px;
+  margin-right: -50px;
 
 }
 .card {
